@@ -9,9 +9,6 @@ class RegisterForm extends Form
     public function __construct()
     {
         parent::__construct([
-            'attr' => [
-                'method' => 'POST',
-            ],
             'fields' => [
                 'email' => [
                     'label' => 'EMAIL',
@@ -24,7 +21,6 @@ class RegisterForm extends Form
                     'extra' => [
                         'attr' => [
                             'placeholder' => 'Enter email',
-                            'class' => 'input-field',
                         ]
                     ]
                 ],
@@ -37,46 +33,37 @@ class RegisterForm extends Form
                     'extra' => [
                         'attr' => [
                             'placeholder' => 'Enter your full name',
-                            'class' => 'input-field',
                         ]
                     ]
                 ],
                 'password' => [
                     'label' => 'PASSWORD',
-                    'type' => 'text',
+                    'type' => 'password',
                     'validators' => [
                         'validate_field_not_empty',
                     ],
                     'extra' => [
                         'attr' => [
                             'placeholder' => 'Enter password',
-                            'class' => 'input-field',
-                        ]
+                         ]
                     ]
                 ],
                 'password_repeat' => [
                     'label' => 'PASSWORD REPEAT',
-                    'type' => 'text',
+                    'type' => 'password',
                     'validators' => [
                         'validate_field_not_empty',
                     ],
                     'extra' => [
                         'attr' => [
                             'placeholder' => 'Repeat password',
-                            'class' => 'input-field',
                         ]
                     ]
                 ],
             ],
             'buttons' => [
-                'send' => [
+                'register' => [
                     'title' => 'REGISTER',
-                    'type' => 'submit',
-                    'extra' => [
-                        'attr' => [
-                            'class' => 'btn',
-                        ]
-                    ]
                 ]
             ],
             'validators' => [

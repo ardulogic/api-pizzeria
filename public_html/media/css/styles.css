@@ -54,18 +54,7 @@ button {
     margin: 5px;
     background: orangered;
     color: white;
-}
-
-.btn {
-    background-color: black;
-    color: white;
-    width: 150px;
-    cursor: pointer;
     font-family: 'Bangers', cursive;
-}
-
-.btn:hover {
-    background-color: gray;
 }
 
 .error {

@@ -11,9 +11,6 @@ class OrderStatusForm extends Form
     public function __construct($value = null, $id = null)
     {
         parent::__construct([
-            'attr' => [
-                'method' => 'POST'
-            ],
             'fields' => [
                 'row_id' => [
                     'type' => 'hidden',
