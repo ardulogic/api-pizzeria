@@ -38,7 +38,7 @@ public function __construct()
         ],
         'buttons' => [
             'login' => [
-                'title' => 'LOGIN',
+                'title' => 'Login',
             ],
         ],
         'validators' => [

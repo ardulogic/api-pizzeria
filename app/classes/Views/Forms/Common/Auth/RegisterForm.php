@@ -11,7 +11,7 @@ class RegisterForm extends Form
         parent::__construct([
             'fields' => [
                 'email' => [
-                    'label' => 'EMAIL',
+                    'label' => 'Email',
                     'type' => 'text',
                     'validators' => [
                         'validate_field_not_empty',
@@ -25,7 +25,7 @@ class RegisterForm extends Form
                     ]
                 ],
                 'user_name' => [
-                    'label' => 'NAME',
+                    'label' => 'Name',
                     'type' => 'text',
                     'validators' => [
                         'validate_field_not_empty',
@@ -37,7 +37,7 @@ class RegisterForm extends Form
                     ]
                 ],
                 'password' => [
-                    'label' => 'PASSWORD',
+                    'label' => 'Password',
                     'type' => 'password',
                     'validators' => [
                         'validate_field_not_empty',
@@ -49,7 +49,7 @@ class RegisterForm extends Form
                     ]
                 ],
                 'password_repeat' => [
-                    'label' => 'PASSWORD REPEAT',
+                    'label' => 'Password Repeat',
                     'type' => 'password',
                     'validators' => [
                         'validate_field_not_empty',
@@ -63,7 +63,7 @@ class RegisterForm extends Form
             ],
             'buttons' => [
                 'register' => [
-                    'title' => 'REGISTER',
+                    'title' => 'Register',
                 ]
             ],
             'validators' => [
